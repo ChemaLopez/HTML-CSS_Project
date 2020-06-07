@@ -1,5 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+h1,h2,h3,h4{
+    padding:1.7rem;
+    margin-bottom: 20px;
+}
+
 body{
     font-family: Arial;
+    margin-left: 1.75rem;
 }
 
 h1,h2 {
@@ -18,3 +31,73 @@ p {
     font-size: 1.3rem;
     text-align: justify;
 }
+
+.main-text{
+    margin-top:0.75rem;
+    margin-bottom: 0.75rem;
+    padding: 
+}
+img{
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.container{
+    max-width: 70rem; /** 1 rem = 16px */
+    width: 100%;
+    margin-top:3.10rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.blog-post {
+    width: 75%;
+    float: left;
+    position: relative;
+}
+.blog-post img{
+    height: 9.25rem;
+    width: auto;
+}
+
+.other-post {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+    float: left;
+
+}
+
+.picture-container{
+}
+
+.picture-container img{
+    height: 6.5rem;
+    width: 6.5rem;
+    border-radius: 50%;
+    float: left;
+}
+.picture-text{
+    float: left;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.other {
+    margin-bottom: 1.5rem;
+}
+
+.date{
+    position: absolute;
+    top:0;
+    right: 0;
+    
+}
+
+

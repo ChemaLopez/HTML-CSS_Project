@@ -1,3 +1,7 @@
+/*----------------------*/
+/*  BASIC SETUP    */
+/*----------------------*/
+
 *{
     margin: 0;
     padding: 0;
@@ -17,20 +21,71 @@ header{
     background-size: cover;
     background-position: center;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
+    margin: 0 auto;
 
-.main-text-box{
-    
 }
 
 h1{
+    color:#fff;
     margin: 0;
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
 }
+/*------------------------------*/
+/*     REUSABLE COMPONENTS      */
+/*-----------------------------*/
 .row{
     max-width: 1140px;
     margin: 0 auto;
+}
+.center-flex{
+    display: flex;
+    justify-content: center;
+    margin:0 auto;
+    height: 100vh;
+    flex-direction:column;
+}
+
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 1.2rem 3.75rem;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 25rem;
+    transition: background-color 0.3s;
+}
+
+.btn-full:link,
+.btn-full:visited{
+    border:0.125rem solid #e67e22;
+    background-color: #e67e22;
+    color:#ffffff;
+    margin-right: 1.875rem  ;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border:0.125rem solid #e67e22;
+    color:#e67e22;
+
+}
+.btn:hover,
+.btn:active {
+    background-color: #bf6516;
+    border:0.125rem solid #bf6516;
+    color:#ffffff;
+
+}
+/*-------------------------------*/
+/*           HEADER             */
+/*-----------------------------*/
+
+.tittle-container{
+    margin-top: 0 ;
+    margin-bottom: 2.5rem;
+    margin-left: 10vmin;
 }

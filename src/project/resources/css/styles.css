@@ -25,14 +25,38 @@ header{
 
 }
 
+h1,h2,h3{
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 h1{
     color:#fff;
     margin: 0;
     font-size: 240%;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 1px;
     word-spacing: 3px;
+}
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom:2rem;
+}
+h2:after{
+    display: block;
+    height: 0.125rem;
+    background-color: #e67e22;
+    content:" ";
+    width:16.25rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+h3{
+    font-size: 110%;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0px;
+    text-align: center;
 }
 /*------------------------------*/
 /*     REUSABLE COMPONENTS      */
@@ -41,14 +65,55 @@ h1{
     max-width: 1140px;
     margin: 0 auto;
 }
-.center-flex{
+
+.flex{
     display: flex;
+}
+
+.center-flex{
     justify-content: center;
     margin:0 auto;
     height: 100vh;
     flex-direction:column;
 }
+.center-flex__no-height{
+    justify-content: center;
+    margin:0 auto;
+    flex-direction:column;
+}
+section{
+    padding:5rem 0;
+}
+/*------------------------------*/
+/*    PARAGRAPHS     */
+/*-----------------------------*/
+.long-copy{
+    line-height: 145%;
+    width: 75%;
+    margin-left: 15%;
+}
+.box{
+    padding: 1%;
+}
 
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/*------------------------------*/
+/*    ICONS     */
+/*-----------------------------*/
+
+.icon-big{
+    font-size: 300%;
+    display: block;
+    color: #e67e22;
+    text-align: center;
+}
+/*-------------------------------*/
+/*           HEADER             */
+/*-----------------------------*/
 .btn:link,
 .btn:visited{
     display: inline-block;
@@ -80,12 +145,40 @@ h1{
     color:#ffffff;
 
 }
-/*-------------------------------*/
-/*           HEADER             */
-/*-----------------------------*/
 
 .tittle-container{
     margin-top: 0 ;
     margin-bottom: 2.5rem;
     margin-left: 10vmin;
+}
+.logo{
+    height:6.25rem;
+    width: auto;
+}
+.main-navigation-container{
+    padding-top: 2.5rem;
+    margin-left: 10vmin;
+}
+.main-navigation{
+    list-style: none;
+    margin-left: auto; 
+    margin-right: 1.5rem;
+    margin-top: 1.7rem;
+}
+
+.main-navigation li{
+    display: inline-block;
+    margin-left: 2.5rem;
+}
+.main-navigation li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 2px transparent;
+    color:#ffffff
+}
+.main-navigation li a:hover,
+.main-navigation li a:active{
+    border-bottom:2px solid #bf6516;
+    transition: border-bottom 0.3s;
+
 }

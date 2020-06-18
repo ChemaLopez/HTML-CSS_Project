@@ -14,6 +14,7 @@ html{
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 .clearfix{
     zoom: 1;
@@ -32,7 +33,7 @@ header{
     background-position: center;
     height: 100vh;
     margin: 0 auto;
-
+    background-attachment: fixed;
 }
 
 h1,h2,h3{
@@ -133,15 +134,18 @@ section{
     margin-top: -0.2rem;
     
 }
-
+.icon-xs{
+    width: 1.5rem ;   
+}
 
 /*-------------------------------*/
 /*           HEADER             */
 /*-----------------------------*/
 .btn:link,
-.btn:visited{
+.btn:visited,
+input[type=submit]{
     display: inline-block;
-    padding: 1.2rem 3.75rem;
+    padding: 1.2rem 2.75rem;
     font-weight: 300;
     text-decoration: none;
     border-radius: 25rem;
@@ -149,11 +153,14 @@ section{
 }
 
 .btn-full:link,
-.btn-full:visited{
+.btn-full:visited,
+input[type=submit]{
     border:0.125rem solid #e67e22;
     background-color: #e67e22;
     color:#ffffff;
-    margin-right: 1.875rem  ;
+}
+.btn-full__header{
+    margin-right: 1.75rem;;
 }
 
 .btn-ghost:link,
@@ -167,7 +174,6 @@ section{
     background-color: #bf6516;
     border:0.125rem solid #bf6516;
     color:#ffffff;
-
 }
 
 .tittle-container{
@@ -313,4 +319,164 @@ section{
 }
 .city-feature{
     margin-bottom: 0.45rem;
+}
+
+/*------------------------------*/
+/*    TESTIOMINALS             */
+/*-----------------------------*/
+
+.section-testimonials{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(images/back-customers.jpg);
+    background-size: cover;
+    color: #ffffff;
+    background-attachment: fixed;
+}
+
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+}
+blockquote:before{
+    content: "\201C";
+    font-size: 400%;
+    display: block;
+    position: absolute;
+    top:0.125rem;
+    left: -0.1rem;
+}
+cite{
+    font-size: 90%;
+    margin-top: 1.5rem;
+    display: block;
+}
+
+
+cite img{
+    height: 3.125rem;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    vertical-align: middle;
+}
+
+
+/*------------------------------*/
+/*    PLANS                     */
+/*-----------------------------*/
+.section-plans{
+background-color: #f4f4f4;
+}
+.plan-box{
+    background-color: #fff;
+    border-radius: 0.6rem;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #e8e8e8;
+}
+.plan-box div{
+    padding: 0.8rem;
+    border-bottom: 1px solid #e8e8e8;
+}
+.plan-box div:first-child{
+    background-color: #eeeeee;
+    border-top-left-radius: 0.45rem;
+    border-top-right-radius: 0.45rem;
+}
+.plan-box div:last-child{
+    text-align: center;
+    border:0;
+ 
+}
+.plan-price{
+    font-size: 300%;
+    margin-bottom: 0.6rem;
+    font-weight: 100;
+    color: #e67e22
+
+}
+.plan-price span{
+    font-size: 40%;
+    font-weight: 300;
+}
+.plan-price-meal{
+    font-size: 80%;
+}
+.plan-box ul{
+    list-style: none;
+}
+.plan-box ul li{
+    padding: 0.5rem 0;
+}
+
+/*------------------------------*/
+/*          FORM                */
+/*-----------------------------*/
+
+.contact-form{
+    width: 60%;
+    margin:0 auto;
+}
+input[type=text],input[type=email], select,textarea{
+    width: 100%;
+    padding: 0.45rem;
+    border-radius: 3px ;
+    border: 1px solid #cccccc
+}
+textarea{
+    height: 6.25rem;
+}
+input[type="checkbox"]{
+    margin: 0 0.3rem 0.7rem;
+
+}
+*:focus{
+    outline: none;
+}
+
+/*------------------------------*/
+/*          FOOTER                */
+/*-----------------------------*/
+footer{
+    background-color: #333333;
+    padding: 2.3rem;
+}
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+
+.social-links{
+    list-style: none;
+    float: right;
+}
+
+
+.footer-nav li,.social-links li{
+    display: inline-block;
+    margin-right: 1.3rem;
+}
+
+.footer-nav li:last-child,.social-links li:last-child{
+    margin-right: 0rem;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    color: #797878;
+    transition:color 0.2s
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color:#ddd
+}
+footer p{
+    color: #797878;
+    text-align: center;
+    font-size: 90%;
+    margin-top: 2rem;
 }

@@ -92,6 +92,9 @@ h3{
     margin:0 auto;
     flex-direction:column;
 }
+
+
+
 section{
     padding:5rem 0;
 }
@@ -181,12 +184,13 @@ input[type=submit]{
     margin-bottom: 2.5rem;
     margin-left: 10vmin;
 }
-.logo{
-    height:6.25rem;
+.logo, .logo-black{
+    height:3.25rem;
     width: auto;
+    margin-top: 0.5rem;
 }
 .main-navigation-container{
-    padding-top: 2.5rem;
+    padding-top: 1.5rem;
     margin-left: 10vmin;
 }
 .main-navigation{
@@ -211,6 +215,30 @@ input[type=submit]{
     border-bottom:2px solid #bf6516;
     transition: border-bottom 0.3s;
 
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.904);
+    box-shadow: 0 2px 2px #efefef;
+}
+.sticky .main-navigation li a:link,
+.sticky .main-navigation li a:visited{
+    padding-top: 1.5rem;
+    color: #555555;
+}   
+.logo-black{
+  display: none;
+  margin: 0.3rem 0
+}
+.sticky .logo {display: none;}
+.sticky .logo-black {display: block;}
+
+.main-navigation-container{
+    padding-top: 0rem;
 }
 /*-------------------------------*/
 /*           MEALS             */
